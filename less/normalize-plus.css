@@ -1,0 +1,10 @@
+/* recommend using with normalize.css */
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
