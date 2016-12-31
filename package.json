@@ -11,10 +11,5 @@
   "bugs": {
     "url": "https://github.com/Landerson352/snippets/issues"
   },
-  "homepage": "https://github.com/Landerson352/snippets#readme",
-  "blinc": [
-    "react-redux/pure-component.js",
-    "react-redux/stateful-component.js",
-    "sublime/myproject.sublimeproject"
-  ]
+  "homepage": "https://github.com/Landerson352/snippets#readme"
 }

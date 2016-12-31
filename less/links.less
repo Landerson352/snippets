@@ -1,0 +1,29 @@
+/* Should be defined elsewhere */
+@space-width: 0.3em;
+
+// Icon-appended links
+// --------------------------------------------------
+
+a.is-up::before,
+a.is-back-up::before {
+	.icon(caret-up);
+	margin-right: @space-width;
+}
+a.is-back::before,
+a.is-prev::before {
+	.icon(caret-left);
+	margin-right: @space-width;
+}
+a.is-fwd::after,
+a.is-next::after {
+	.icon(caret-right);
+	margin-left: @space-width;
+}
+
+/* this could be done with an [href] selector 
+but we've found it's best to opt-in to 
+applying it programatically */ 
+a.is-external::after {
+	.icon(external-link);
+	margin-left: @space-width;
+}

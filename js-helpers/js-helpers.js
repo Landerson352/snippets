@@ -21,3 +21,10 @@ const distanceShorterThan = (x1, y1, x2, y2, distance) => {
 const pointDistanceShorterThan = (p1, p2, distance) => {
 	return distanceShorterThan(p1.x, p1.y, p2.x, p2.y, distance);
 }
+
+module.exports = {
+	randomInteger,
+	distance,
+	pointDistance,
+	pointDistanceShorterThan,
+};

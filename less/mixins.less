@@ -1,0 +1,16 @@
+.all-caps() {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.crop-circle() {
+	border-radius: 50%;
+	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+
+.print-hidden() {
+	@media print {
+		display: none !important;
+	}
+}

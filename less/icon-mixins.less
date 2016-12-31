@@ -1,0 +1,16 @@
+/* Should be defined elsewhere */
+@fa-font-size-base:   14px;
+@fa-line-height-base: 1;
+
+/* Copied from Font-Awesome */
+.icon(@iconKey; @display: inline-block) {
+	display: @display;
+	font: normal normal normal @fa-font-size-base/@fa-line-height-base FontAwesome; // shortening font declaration
+	font-size: inherit; // can't have font-size inherit on line above, so need to override
+	text-rendering: auto; // optimizelegibility throws things off #1094
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@content: "fa-var-@{iconKey}";
+	content: @@content;
+}
