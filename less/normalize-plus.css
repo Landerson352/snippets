@@ -1,7 +1,12 @@
 /* recommend using with normalize.css */
 
-* {
+*,
+*::after,
+*::before {
 	box-sizing: border-box;
+}
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 html,
 body {
