@@ -1,4 +1,4 @@
-import createjs from 'createjs-combined'
+import createjs from 'createjs-combined';
 
 // config
 const CANVAS_ID = 'mainCanvas';
