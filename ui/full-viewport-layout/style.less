@@ -5,12 +5,12 @@ body {
 
 /* these settings can cause print issues */
 @media screen {
-	.perimeter {
+	.layout-wrapper {
 		align-items: stretch;
 		display: flex;
 		min-height: 100%;
 
-		*::after {
+		&::after {
 			content: "";
 			display: block;
 			flex: 0 0 0;
@@ -35,7 +35,7 @@ header {
 	background: #eee;
 	min-height: 60px;
 }
-.content {
+.content-wrapper {
 	min-height: 500px;
 }
 footer {
