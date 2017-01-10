@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainView from "./mainView";
 
-var mainView = React.createElement(MainView,{name:'there'},null);
+import '../css/app.less';
+
+const MainView = () => (
+	<h1>Hello world!</h1>
+);
+
+var mainView = React.createElement(MainView);
 
 ReactDOM.render(mainView, document.getElementById("main"));
