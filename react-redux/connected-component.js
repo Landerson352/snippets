@@ -1,3 +1,5 @@
+// https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options
+
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 
