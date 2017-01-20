@@ -1,0 +1,1 @@
+<div ref={e => { this.myElement = e; }} />

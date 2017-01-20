@@ -5,6 +5,7 @@ Snippets to make my life easier.
 ## directories
 - [cdnjs](https://cdnjs.com/)
 - [npm](https://www.npmjs.com/)
+- [Awesome APIs](https://github.com/abhishekbanthia/Awesome-APIs)
 
 ## frameworks + generic libraries
 - [Bootstrap](http://getbootstrap.com/css/)
@@ -36,6 +37,7 @@ Snippets to make my life easier.
 - [Fontello](http://fontello.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Real Favicon Generator](http://realfavicongenerator.net)
+- [FFmpeg](http://www.ffmpeg.org/documentation.html)
 
 ## guides
 - [CanIUse](http://caniuse.com/)
