@@ -1,9 +1,3 @@
-import { Link } from 'react-router';
-
-<Link to="path/in/app">Go to page</Link>
-
-
-
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
 const myRecords = [];
