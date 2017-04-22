@@ -1,3 +1,4 @@
+var path = require('path');
 var webpack = require('webpack');
 var fail = require('webpack-fail-plugin');
 var copy = require('copy-webpack-plugin');
@@ -7,6 +8,8 @@ var project = require('./project.config');
 
 var isProduction = process.env.NODE_ENV ?
 	process.env.NODE_ENV.trim() == 'production' : false;
+
+console.log(__dirname);
 
 var config = {
 	context : project.sourceFolder,
@@ -25,10 +28,10 @@ var config = {
   	filename: project.outputFileName
 	},
 	module : {
-		loaders :[
+		loaders : [
 			{
 		      test: /\.jsx?$/,
-		      exclude: /node_modules/,
+		      exclude: project.exclude,
 		      loader: 'babel',
 		      query: {
 		        presets: ['es2015', 'stage-0', 'react', 'react-hmre']

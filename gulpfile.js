@@ -25,7 +25,7 @@ function compile() {
 function startServer() {
 	//Following code is commented because these configurations are already added in webpack-config.js
 	webpackConfig.entry.unshift(
-		'webpack-dev-server/client?http://localhost:' + webpackConfig.serverPort + '/', 
+		'webpack-dev-server/client?http://localhost:' + webpackConfig.serverPort + '/',
 		'webpack/hot/dev-server');
 	webpackConfig.plugins.push(new webpack.HotModuleReplacementPlugin());
 
