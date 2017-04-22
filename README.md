@@ -17,8 +17,10 @@ Snippets to make my life easier.
 
 ### react-redux
 - [React](http://facebook.github.io/react-native/docs/getting-started.html)
+- [React-Router](https://github.com/ReactTraining/react-router/tree/master/docs)
 - [React-Redux](https://github.com/reactjs/react-redux/blob/master/docs/api.md#api)
 - [Redux-Form](http://redux-form.com/6.0.5/docs/GettingStarted.md/)
+- [Re-base](https://github.com/tylermcginnis/re-base)
 
 ### wordpress
 - [ACF](https://www.advancedcustomfields.com/resources/)
