@@ -1,0 +1,27 @@
+// prefix with "rt" as in "rt-fade"
+.rt {
+	&-fade {
+		// "add" transition
+		&-enter {
+			// from
+			opacity: 0.01;
+
+			// to
+			&&-active {
+				opacity: 1;
+				transition: opacity 0.3s;
+			}
+		}
+		// "remove" transition
+		&-leave {
+			// from
+			opacity: 1;
+
+			// to
+			&&-active {
+				opacity: 0.01;
+				transition: opacity 0.3s;
+			}
+		}
+	}
+}

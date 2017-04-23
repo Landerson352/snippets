@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Test page</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>My Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Visit http://realfavicongenerator.net/ and paste the result here. -->
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="bundle.css"/>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
 	</head>
 	<body>
-		<div id="main"></div>
+		<!--[if lte IE 9]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+
+		<div class="container">
+			<div class="menu-wrap">
+				<nav class="menu">
+					NAV
+				</nav>
+				<button class="close-button js-close-button">X</button>
+			</div>
+			<div class="content-wrap js-content-wrap">
+				<div class="content">
+					<div class="layout-wrapper">
+						<div class="layout">
+							<header>
+								Logo
+								<button class="js-open-button">Menu</button>
+							</header>
+							<div class="content-wrapper">
+								<div id="app"></div>
+							</div>
+							<footer>footer</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="bundle.js"></script>
+
+		<!--
+		<script>
+			window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+			ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+		</script>
+		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+		-->
 	</body>
 </html>

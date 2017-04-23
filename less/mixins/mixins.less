@@ -1,16 +1,30 @@
-.all-caps() {
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-}
-
-.crop-circle() {
-	border-radius: 50%;
-	overflow: hidden;
-	-webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-
 .print-hidden() {
 	@media print {
 		display: none !important;
 	}
+}
+
+// Looping mixin
+.for(@list, @code) {
+    & {
+        .loop(@i:1) when (@i =< length(@list)) {
+            @value: extract(@list, @i);
+            @code();
+            .loop(@i + 1);
+        }
+        .loop();
+    }
+}
+
+// Responsive mixin
+.fixed-sizes(@sizes...) {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	.for(@sizes, {
+		@media screen and (min-width: unit(@value, px)) {
+			width: unit(@value, px);
+		}
+	});
 }
