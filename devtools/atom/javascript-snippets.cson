@@ -1,0 +1,7 @@
+'.source.js':
+  'bind':
+    'prefix': 'bind'
+    'body': 'this.${1:handleClick} = this.${1:handleClick}.bind(this);$2'
+  'import':
+    'prefix': 'import'
+    'body': 'import ${1:module} from \'$2${1:module}\';$3'

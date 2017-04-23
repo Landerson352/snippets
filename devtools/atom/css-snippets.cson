@@ -1,0 +1,10 @@
+'.source.css':
+  'flexbox justify-content':
+    'prefix': 'distribute-items'
+    'body': 'justify-content: ${1:start};$2'
+  'flexbox align-content':
+    'prefix': 'distribute-lines'
+    'body': 'align-content: ${1:start};$2'
+  'flexbox column':
+    'prefix': 'flex-col'
+    'body': 'display: flex;\nflex-flow: ${1:column};$2'
