@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Uniform Bootstrap</title>
+		<title>Bootstrap on Brinc</title>
 
 		<!-- TODO: Visit http://realfavicongenerator.net/ and paste the result here. -->
 
@@ -25,10 +25,12 @@
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script> -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script> -->
 
+		<script src="js/svg-utils.js"></script>
 		<script src="js/autostack.js"></script>
 
 	</head>
 	<body>
+
 		<div class="page">
 
 			<!-- Form scaffolding test - ideal size -> flex basis, grow except buttons
@@ -130,7 +132,7 @@
 			</div> -->
 
 			<div class="container">
-				<h2>Autostack Button Row</h2>
+				<h2>Autostacked Button Row</h2>
 				<div class="btn-row btn-row-reverse autostack">
 					<button class="btn btn-comfort btn-primary">These buttons</button>
 					<button class="btn btn-comfort btn-outline-primary">Will</button>
@@ -141,7 +143,7 @@
 				<br/>
 				<br/>
 
-				<h2>Fluid Grid</h2>
+				<h2>Fluid Grid &amp; Cross-breakpoint Columns</h2>
 				<div class="row favorites">
 					<div class="col-4"><div class="favorite"></div></div>
 					<div class="col-2"><div class="favorite"></div></div>
@@ -167,6 +169,72 @@
 					<li><div class="favorite"></div></li>
 					<li><div class="favorite"></div></li>
 				</ul> -->
+
+				<h2>Progress Ring</h2>
+
+				<div class="row" style="justify-content: center">
+					<div class="col-4">
+						<div class="progress-ring progress-ring-primary">
+							<svg id="progress-ring-1" viewBox="-50 -50 100 100" class="progress-ring-svg">
+								<circle class="progress-ring-track"/>
+								<path class="progress-ring-fill" />
+							</svg>
+							<div class="progress-ring-label">
+								<div class="progress-ring-big-label">
+									<div class="progress-ring-header">Overall Progress</div>
+									<div class="progress-ring-amount">
+										<div class="progress-ring-number">80</div>
+										<div class="progress-ring-percent">%</div>
+									</div>
+									<div class="progress-ring-footer">Toward Goal</div>
+								</div>
+							</div>
+							<script>
+								SVGUtils.updateProgressRing(document.getElementById('progress-ring-1'), 0.8, 2);
+							</script>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="progress-ring progress-ring-primary">
+							<svg id="progress-ring-2" viewBox="-50 -50 100 100" class="progress-ring-svg">
+								<circle class="progress-ring-track"/>
+								<path class="progress-ring-fill" />
+							</svg>
+							<div class="progress-ring-label">
+								<div class="progress-ring-big-label">
+									<div class="progress-ring-header">Tasks</div>
+									<div class="progress-ring-amount">
+										<div class="progress-ring-number">2/3</div>
+									</div>
+									<div class="progress-ring-footer">Complete</div>
+								</div>
+							</div>
+							<script>
+								SVGUtils.updateProgressRing(document.getElementById('progress-ring-2'), 0.6, 2);
+							</script>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="progress-ring progress-ring-danger">
+							<svg id="progress-ring-3" viewBox="-50 -50 100 100" class="progress-ring-svg">
+								<circle class="progress-ring-track"/>
+								<path class="progress-ring-fill" />
+							</svg>
+							<div class="progress-ring-label">
+								<div class="progress-ring-big-label">
+									<div class="progress-ring-header">Your Rating</div>
+									<div class="progress-ring-amount">
+										<div class="progress-ring-number">0.2</div>
+									</div>
+									<div class="progress-ring-footer">Efficiency</div>
+								</div>
+							</div>
+							<script>
+								SVGUtils.updateProgressRing(document.getElementById('progress-ring-3'), 0.2, 2);
+							</script>
+						</div>
+					</div>
+				</div>
 
 				<div class="row">
 					<div class="col-lg-8">

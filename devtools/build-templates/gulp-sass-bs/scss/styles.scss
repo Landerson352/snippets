@@ -209,3 +209,69 @@ input {
 // .btn-danger {
 //   box-shadow: 0 10px 20px fade($btn-danger-bg, $btn-acrylic-glow);
 // }
+
+.progress-ring {
+  @include block(3.5);
+  margin: 0.5rem auto;
+  position: relative;
+}
+.progress-ring-primary { color: $brand-primary; }
+.progress-ring-secondary { color: #777; }
+.progress-ring-success { color: $brand-success; }
+.progress-ring-info { color: $brand-info; }
+.progress-ring-warning { color: $brand-warning; }
+.progress-ring-danger { color: $brand-danger; }
+
+.progress-ring-svg {
+  width: 100%;
+}
+.progress-ring-track {
+  fill: none;
+  stroke: fade(#777, 15%);
+}
+.progress-ring-fill {
+  fill: none;
+  stroke: currentColor;
+}
+.progress-ring-label {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0.5rem;
+  left: 0;
+}
+.progress-ring-header,
+.progress-ring-footer {
+  @include all-caps;
+  color: fade(#777, 75%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  text-align: center;
+}
+.progress-ring-amount {
+  display: flex;
+  flex-flow: row;
+  letter-spacing: -0.25em;
+  margin: 0.375rem 0 0.625rem;
+}
+.progress-ring-number {
+  font-size: 6.5rem;
+  font-weight: 300;
+  line-height: 5.5rem;
+}
+.progress-ring-percent {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-top: 0.25rem
+}
+
+.section-inverse {
+  background-color: $body-color;
+  color: $body-bg;
+}
