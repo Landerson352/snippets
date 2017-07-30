@@ -1,0 +1,14 @@
+@mixin text-block($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  @include text-offset($font-size, $line-height);
+}
+@mixin text-offset($font-size, $line-height) {
+  // value will depend on font face metrics
+  $top-line: ($line-height - $font-size * 0.75) /2;
+  transform: translate(0, -$top-line);
+}
+@mixin all-caps {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

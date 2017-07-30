@@ -1,0 +1,55 @@
+//TODO: finish conversion from LESS
+
+// "Pseudo" is weird as hell to type. How about "sudo"!
+
+@mixin sudo() {
+	content:"";
+	display:block;
+	position: absolute;
+}
+
+@mixin sudo-triangle($type, $size, $color) {
+	border-width: $size/2;
+	@include sudo-triangle($type, $color);
+}
+
+@mixin sudo-triangle($type, $xsize, $ysize, $color) {
+	border-width: $ysize/2 $xsize/2;
+	@include sudo-triangle($type, $color);
+}
+
+@mixin sudo-triangle($type, $color) {
+	@include sudo;
+	z-index:-1;
+	width:0;
+	height:0;
+
+	border-style: solid;
+	border-color: transparent;
+
+	@if ($type=top), ($type=topleft), ($type=topright) {
+		border-top-color: $color;
+	}
+	@if ($type=bottom), ($type=bottomleft), ($type=bottomright) {
+		border-bottom-color: $color;
+	}
+	@if ($type=left), ($type=topleft), ($type=bottomleft) {
+		border-left-color: $color;
+	}
+	@if ($type=right), ($type=topright), ($type=bottomright) {
+		border-right-color: $color;
+	}
+
+	@if ($type=top) {
+		border-bottom-width:0;
+	}
+	@if ($type=bottom) {
+		border-top-width:0;
+	}
+	@if ($type=left) {
+		border-right-width:0;
+	}
+	@if ($type=right) {
+		border-left-width:0;
+	}
+}

@@ -1,0 +1,211 @@
+@import "variables";
+@import "brinc/brinc";
+@import "bootstrap";
+
+@import "scaffold";
+@import "type";
+
+.page {
+  overflow: hidden;
+}
+
+// DEMO: favorites
+.favorites {
+//   @include row;
+//   list-style: none;
+//   margin-top: 3rem;
+  margin-bottom: 3rem;
+//   padding: 0;
+//
+//   > * {
+//     @include col-set(1/4, 1/6, 1/8, 1/12);
+//     margin-bottom: 1rem;
+//   }
+}
+.favorite {
+  background-color: #eee;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+// buttons modifications
+.btn {
+  cursor: pointer;
+}
+.btn-row {
+  display: flex;
+  margin: -$grid-gutter-width-base/2;
+
+  > * {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin: $grid-gutter-width-base/2;
+  }
+}
+.btn-row-reverse {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+.btn-comfort {
+  min-width: 9rem; // 2 can fit on button row on 320px
+}
+
+// forms modifications
+input {
+  font-weight: $font-weight-light;
+}
+.form-group {
+  min-height: 6rem;
+
+  // &.has-no-label {
+  //   padding-top:1.5rem;
+  // }
+}
+
+.section-gray {
+  background-color: #f3f3f3;
+  margin: 2rem 0;
+  padding: 3rem 0 2rem;
+}
+
+.row {
+  @include row();
+}
+// .col-1  { width: 25%; }
+// .col-2  { width: 50%; }
+// .col-3  { width: 75%; }
+// .col-4  { width: 100%; }
+// @include media(">=phone") {
+//   .col-sm-1  { @include col( 1); }
+//   .col-sm-2  { @include col( 2); }
+//   .col-sm-3  { @include col( 3); }
+//   .col-sm-4  { @include col( 4); }
+//   .col-5,
+//   .col-sm-5  { @include col( 5); }
+//   .col-6,
+//   .col-sm-6  { @include col( 6); }
+// }
+// @include media(">=tablet") {
+//   .col-md-1  { @include col( 1); }
+//   .col-md-2  { @include col( 2); }
+//   .col-md-3  { @include col( 3); }
+//   .col-md-4  { @include col( 4); }
+//   .col-md-5  { @include col( 5); }
+//   .col-md-6  { @include col( 6); }
+//   .col-7,
+//   .col-md-7  { @include col( 7); }
+//   .col-8,
+//   .col-md-8  { @include col( 8); }
+// }
+// @include media(">=desktop") {
+//   .col-lg-1  { @include col( 1); }
+//   .col-lg-2  { @include col( 2); }
+//   .col-lg-3  { @include col( 3); }
+//   .col-lg-4  { @include col( 4); }
+//   .col-lg-5  { @include col( 5); }
+//   .col-lg-6  { @include col( 6); }
+//   .col-lg-7  { @include col( 7); }
+//   .col-lg-8  { @include col( 8); }
+//   .col-9,
+//   .col-lg-9  { @include col( 9); }
+//   .col-10,
+//   .col-lg-10 { @include col(10); }
+//   .col-11,
+//   .col-lg-11 { @include col(11); }
+//   .col-12,
+//   .col-lg-12 { @include col(12); }
+// }
+
+.form-row {
+  @include row();
+
+  > * {
+    flex: 1 0 auto;
+  }
+}
+.form-group-1  { @include block(1, true); }
+.form-group-2  { @include block(2, true); }
+.form-group-3  { @include block(3, true); }
+.form-group-4  { @include block(4, true); }
+
+.form-group-btn {
+  flex-grow:0;
+  padding-top:1.5rem;
+}
+
+// .col-1  { @include col-set(1/4, 1/6, 1/8, 1/12) }
+// .col-2  { @include col-set(2/4, 2/6, 2/8, 2/12) }
+// .col-3  { @include col-set(3/4, 3/6, 3/8, 3/12) }
+// .col-4  { @include col-set(4/4, 4/6, 4/8, 4/12) }
+
+.col-1  { @include col( 1/4); }
+.col-2  { @include col( 2/4); }
+.col-3  { @include col( 3/4); }
+.col-4  { @include col( 4/4); }
+.col-xs-1  { @include col( 1/4); }
+.col-xs-2  { @include col( 2/4); }
+.col-xs-3  { @include col( 3/4); }
+.col-xs-4  { @include col( 4/4); }
+@include media(">=phone") {
+  .col-1  { @include col( 1/6); }
+  .col-2  { @include col( 2/6); }
+  .col-3  { @include col( 3/6); }
+  .col-4  { @include col( 4/6); }
+  .col-sm-1  { @include col( 1/6); }
+  .col-sm-2  { @include col( 2/6); }
+  .col-sm-3  { @include col( 3/6); }
+  .col-sm-4  { @include col( 4/6); }
+  .col-sm-5  { @include col( 5/6); }
+  .col-sm-6  { @include col( 6/6); }
+}
+@include media(">=tablet") {
+  .col-1  { @include col( 1/8); }
+  .col-2  { @include col( 2/8); }
+  .col-3  { @include col( 3/8); }
+  .col-4  { @include col( 4/8); }
+  .col-md-1  { @include col( 1/8); }
+  .col-md-2  { @include col( 2/8); }
+  .col-md-3  { @include col( 3/8); }
+  .col-md-4  { @include col( 4/8); }
+  .col-md-5  { @include col( 5/8); }
+  .col-md-6  { @include col( 6/8); }
+  .col-md-7  { @include col( 7/8); }
+  .col-md-8  { @include col( 8/8); }
+}
+@include media(">=desktop") {
+  .col-1  { @include col( 1/12); }
+  .col-2  { @include col( 2/12); }
+  .col-3  { @include col( 3/12); }
+  .col-4  { @include col( 4/12); }
+  .col-lg-1  { @include col( 1/12); }
+  .col-lg-2  { @include col( 2/12); }
+  .col-lg-3  { @include col( 3/12); }
+  .col-lg-4  { @include col( 4/12); }
+  .col-lg-5  { @include col( 5/12); }
+  .col-lg-6  { @include col( 6/12); }
+  .col-lg-7  { @include col( 7/12); }
+  .col-lg-8  { @include col( 8/12); }
+  .col-lg-9  { @include col( 9/12); }
+  .col-lg-10 { @include col(10/12); }
+  .col-lg-11 { @include col(11/12); }
+  .col-lg-12 { @include col(12/12); }
+}
+//
+// .btn-primary {
+//   box-shadow: 0 10px 20px fade($btn-primary-bg, $btn-acrylic-glow);
+// }
+// .btn-secondary {
+//   box-shadow: 0 10px 20px fade($btn-secondary-bg, $btn-acrylic-glow);
+// }
+// .btn-success {
+//   box-shadow: 0 10px 20px fade($btn-success-bg, $btn-acrylic-glow);
+// }
+// .btn-info {
+//   box-shadow: 0 10px 20px fade($btn-info-bg, $btn-acrylic-glow);
+// }
+// .btn-warning {
+//   box-shadow: 0 10px 20px fade($btn-warning-bg, $btn-acrylic-glow);
+// }
+// .btn-danger {
+//   box-shadow: 0 10px 20px fade($btn-danger-bg, $btn-acrylic-glow);
+// }

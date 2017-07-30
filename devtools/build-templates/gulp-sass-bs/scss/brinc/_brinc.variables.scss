@@ -1,0 +1,30 @@
+// Brinc-specific variables
+
+$font-size-root: 16px !default;
+
+$font-weight-light: 300 !default;
+$font-weight-semibold: 600 !default;
+
+$breakpoints: (
+	'phone': 31rem, //496px
+	'tablet': 41rem, //656px
+	'desktop': 61rem //976px
+) !default;
+
+$column-width: 4rem;
+
+// Bootstrap overrides just to get things aligned to grid
+
+$grid-gutter-width-base: 1rem !default;
+
+$input-btn-border-width: 1rem/16 !default;
+
+$form-text-margin-top: 0.5rem !default;
+
+$small-font-size: 0.75rem !default
+
+$input-line-height: 22/16 !default;
+
+$btn-line-height: 22/16 !default;
+
+$input-padding-x: 0.5rem !default;

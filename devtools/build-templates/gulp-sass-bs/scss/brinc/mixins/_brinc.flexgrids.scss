@@ -1,0 +1,61 @@
+// Flex Grid is a simple flexbox container.
+// It has a "row" direction with wrapping.
+// Its content justification can be set (default left).
+@mixin flex-grid($justifyContent:left) {
+	display: flex;
+	flex-flow: row wrap;
+
+	@if $justifyContent != left {
+		justify-content: $justifyContent;
+	}
+}
+@mixin row($justifyContent:left, $gutter: $grid-gutter-width-base) {
+	@include flex-grid($justifyContent);
+	margin-left: -$gutter / 2;
+	margin-right: -$gutter / 2;
+
+	> * {
+		padding-left: $gutter / 2;
+		padding-right: $gutter / 2;
+		// width: 100%;
+	}
+}
+//TODO: update with gutter & column width variables
+// @mixin col($size:1) {
+// 	width: $size * 5rem;
+// }
+@mixin block($size:1, $padded: false) {
+	@if ($padded) {
+		width: $size * ($column-width + $grid-gutter-width-base);
+	} @else {
+		width: $size * ($column-width + $grid-gutter-width-base) - $grid-gutter-width-base;
+	}
+}
+// @mixin col-set($col-phone, $col-tablet, $col-desktop) {
+// 	@include media(">=phone") {
+// 		@include col($col-phone);
+// 	}
+// 	@include media(">=tablet") {
+// 		@include col($col-tablet);
+// 	}
+// 	@include media(">=desktop") {
+// 		@include col($col-desktop);
+// 	}
+// }
+
+@mixin col($size:1) {
+	width: $size * 100%;
+}
+@mixin col-set($col-default, $col-phone, $col-tablet, $col-desktop) {
+	@include col($col-default);
+
+	@include media(">=phone") {
+		@include col($col-phone);
+	}
+	@include media(">=tablet") {
+		@include col($col-tablet);
+	}
+	@include media(">=desktop") {
+		@include col($col-desktop);
+	}
+}

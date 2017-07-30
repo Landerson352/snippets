@@ -1,0 +1,20 @@
+//TODO: update with gutter & column width variables
+.container {
+  margin: 0 1rem;
+
+  @include media(">=desktop") {
+    margin: 0 auto;
+    width: map-get($breakpoints, desktop) - 3rem;
+  }
+
+  // @include media(">=phone") {
+  //   margin: 0 auto;
+  //   width: map-get($breakpoints, phone) - 2rem;
+  // }
+  // @include media(">=tablet") {
+  //   width: map-get($breakpoints, tablet) - 2rem;
+  // }
+  // @include media(">=desktop") {
+  //   width: map-get($breakpoints, desktop) - 2rem;
+  // }
+}

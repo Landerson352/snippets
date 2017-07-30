@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0 0 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+	p + & {
+		margin-top: 2rem;
+
+		@include media(">=phone") {
+			margin-top: 3rem;
+		}
+
+		@include media(">=tablet") {
+			margin-top: 4rem;
+		}
+	}
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+h5 {
+	font-weight: $font-weight-semibold;
+}
+h6 {
+	@include all-caps;
+	font-weight: bold;
+}
+h1 {
+	@include text-block(2rem, 2.5rem);
+
+	@include media(">=tablet") {
+		@include text-block(2.5rem, 3rem);
+	}
+}
+h2 {
+	@include text-block(1.75rem, 2rem);
+
+	@include media(">=tablet") {
+		@include text-block(2rem, 2.5rem);
+	}
+}
+h3 {
+	@include text-block(1.5rem, 2rem);
+}
+h4 {
+	@include text-block(1.25rem, 1.5rem);
+}
+h5 {
+	@include text-block(1rem, 1rem);
+}
+h6 {
+	@include text-block(0.75rem, 1rem);
+}
+p {
+	@include text-block($font-size-base, $line-height-base);
+	font-weight: $font-weight-light;
+}
+small {
+	@include text-block($small-font-size, 1rem);
+}
+label {
+	@include all-caps;
+	@include text-block(0.75rem, 1rem);
+	font-weight: bold;
+	margin: 0;
+}

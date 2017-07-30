@@ -1,0 +1,17 @@
+@mixin round($radius: 50%, $hideOverflow: true) {
+	border-radius: $radius;
+
+	@if $hideOverflow {
+		overflow:hidden;
+	}
+}
+
+@mixin background-fill($url, $color: transparent) {
+	background-position: center center;
+	background-size: cover;
+	background-image: url($url);
+
+	@if $color != transparent {
+		background-color:$color;
+	}
+}

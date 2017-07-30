@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Uniform Bootstrap</title>
+
+		<!-- TODO: Visit http://realfavicongenerator.net/ and paste the result here. -->
+
+		<!-- Production CSS: If you prefer not to use CDN, bundle these in your build -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- <link href="https://basehold.it/8" rel="stylesheet"> -->
+		<link href="build/styles.css" rel="stylesheet">
+
+		<!-- Production Scripts: If you prefer not to use CDN, bundle these in your build -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.min.js"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script> -->
+
+		<script src="js/autostack.js"></script>
+
+	</head>
+	<body>
+		<div class="page">
+
+			<!-- Form scaffolding test - ideal size -> flex basis, grow except buttons
+			<div style="display: flex; flex-flow: row wrap">
+				<div class="width-2" style="background: red; flex: 0 0 auto; width: 10rem">a</div>
+				<div class="width-3" style="background: green; flex: 0 0 auto; width: 12rem">b</div>
+				<div class="width-4" style="background: yellow; flex: 0 0 auto; width: 16rem">c</div>
+				<div class="width-2" style="background: blue; flex: 0 0 auto; width: 12rem">d</div>
+			</div> -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<h1>The quick brown fox jumps over the lazy dog.</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lectus, ultrices et aliquam nec, varius ut orci. Integer in augue sit amet dui tincidunt mattis. Aenean id nisl risus. Praesent et lacus eu libero congue eleifend. Duis pharetra eleifend purus, at venenatis lectus. Quisque tempor libero urna, id sagittis urna placerat in. Nulla sed nisi vel massa malesuada sollicitudin. Maecenas convallis lorem odio, et imperdiet ante sodales eget. Cras augue erat, dignissim et accumsan pellentesque, sollicitudin sit amet eros. Sed a suscipit purus.</p>
+						<p>Praesent cursus, ex eget interdum pulvinar, turpis lacus placerat nibh, quis pretium erat purus et dui. Nunc eu porta turpis, eu consectetur nibh. Mauris libero risus, porttitor ut nisl ac, faucibus feugiat massa. Duis congue vulputate odio eu sodales. Suspendisse ullamcorper, eros at dignissim molestie, est odio blandit turpis, eget lobortis eros nunc consectetur lectus. Nunc auctor nulla id iaculis ornare. Aenean maximus, ipsum vel dignissim dapibus, neque risus pharetra urna, eget interdum lorem purus vel odio. Phasellus aliquet turpis vitae turpis pharetra, nec malesuada massa pellentesque. Donec convallis quam quam, rutrum iaculis orci hendrerit vitae. Phasellus suscipit, dui sit amet imperdiet pretium, augue diam pellentesque turpis, sed interdum orci ligula in elit. Cras aliquet, lectus et ullamcorper tempus, ipsum erat pellentesque libero, nec lobortis erat arcu ac urna. Morbi semper in sapien nec varius. Sed arcu erat, bibendum non quam quis, elementum finibus urna. Maecenas pharetra leo a interdum cursus. Maecenas fringilla tincidunt feugiat.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-gray">
+				<div class="container">
+					<h2>Form Grid</h2>
+					<div class="form-row">
+						<div class="form-group form-group-2">
+							<label for="exampleInptEmail1">First name</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="form-group form-group-2">
+							<label for="exampleInputEmail1">Last name</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="form-group form-group-4">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="exampleInputEmail1">Address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group form-group-2">
+							<label for="exampleInputEmail1">City</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="form-group form-group-1">
+							<label for="exampleInputEmail1">State</label>
+							<select class="form-control">
+								<option>AK</option>
+							</select>
+						</div>
+						<div class="form-group form-group-2">
+							<label for="exampleInputEmail1">Zip</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						</div>
+						<div class="form-group form-group-2 form-group-btn">
+							<button class="btn btn-primary btn-block">Save</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <br/>
+
+			<div class="section-gray">
+				<div class="container">
+					<h2>Contact Us</h2>
+					<div class="row">
+						<div class="col-2 col-md-3">
+							<div class="form-group">
+								<label for="exampleInptEmail1">First name</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>
+						</div>
+						<div class="col-2 col-md-3">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Last name</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>
+						</div>
+						<div class="col-4 col-md-4">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+						</div>
+						<div class="col-2 col-sm-2">
+							<div class="form-group has-no-label">
+								<button class="btn btn-primary btn-block">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="container">
+				<h2>Autostack Button Row</h2>
+				<div class="btn-row btn-row-reverse autostack">
+					<button class="btn btn-comfort btn-primary">These buttons</button>
+					<button class="btn btn-comfort btn-outline-primary">Will</button>
+					<button class="btn btn-comfort btn-secondary">Automatically</button>
+					<button class="btn btn-comfort btn-outline-secondary">Stack</button>
+				</div>
+
+				<br/>
+				<br/>
+
+				<h2>Fluid Grid</h2>
+				<div class="row favorites">
+					<div class="col-4"><div class="favorite"></div></div>
+					<div class="col-2"><div class="favorite"></div></div>
+					<div class="col-2"><div class="favorite"></div></div>
+					<div class="col-4"><div class="favorite"></div></div>
+					<div class="col-2"><div class="favorite"></div></div>
+					<div class="col-2"><div class="favorite"></div></div>
+					<div class="col-2"><div class="favorite"></div></div>
+					<div class="col-2"><div class="favorite"></div></div>
+					<div class="col-4"><div class="favorite"></div></div>
+				</div>
+				<!-- <ul class="favorites">
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+					<li><div class="favorite"></div></li>
+				</ul> -->
+
+				<div class="row">
+					<div class="col-lg-8">
+						<h2>The quick brown fox jumps over the lazy dog.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lectus, ultrices et aliquam nec, varius ut orci. Integer in augue sit amet dui tincidunt mattis. Aenean id nisl risus. Praesent et lacus eu libero congue eleifend. Duis pharetra eleifend purus, at venenatis lectus. Quisque tempor libero urna, id sagittis urna placerat in. Nulla sed nisi vel massa malesuada sollicitudin. Maecenas convallis lorem odio, et imperdiet ante sodales eget. Cras augue erat, dignissim et accumsan pellentesque, sollicitudin sit amet eros. Sed a suscipit purus.</p>
+						<p>Praesent cursus, ex eget interdum pulvinar, turpis lacus placerat nibh, quis pretium erat purus et dui. Nunc eu porta turpis, eu consectetur nibh. Mauris libero risus, porttitor ut nisl ac, faucibus feugiat massa. Duis congue vulputate odio eu sodales. Suspendisse ullamcorper, eros at dignissim molestie, est odio blandit turpis, eget lobortis eros nunc consectetur lectus. Nunc auctor nulla id iaculis ornare. Aenean maximus, ipsum vel dignissim dapibus, neque risus pharetra urna, eget interdum lorem purus vel odio. Phasellus aliquet turpis vitae turpis pharetra, nec malesuada massa pellentesque. Donec convallis quam quam, rutrum iaculis orci hendrerit vitae. Phasellus suscipit, dui sit amet imperdiet pretium, augue diam pellentesque turpis, sed interdum orci ligula in elit. Cras aliquet, lectus et ullamcorper tempus, ipsum erat pellentesque libero, nec lobortis erat arcu ac urna. Morbi semper in sapien nec varius. Sed arcu erat, bibendum non quam quis, elementum finibus urna. Maecenas pharetra leo a interdum cursus. Maecenas fringilla tincidunt feugiat.</p>
+
+						<h3>The quick brown fox jumps over the lazy dog.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lectus, ultrices et aliquam nec, varius ut orci. Integer in augue sit amet dui tincidunt mattis. Aenean id nisl risus. Praesent et lacus eu libero congue eleifend. Duis pharetra eleifend purus, at venenatis lectus. Quisque tempor libero urna, id sagittis urna placerat in. Nulla sed nisi vel massa malesuada sollicitudin. Maecenas convallis lorem odio, et imperdiet ante sodales eget. Cras augue erat, dignissim et accumsan pellentesque, sollicitudin sit amet eros. Sed a suscipit purus.</p>
+						<p>Praesent cursus, ex eget interdum pulvinar, turpis lacus placerat nibh, quis pretium erat purus et dui. Nunc eu porta turpis, eu consectetur nibh. Mauris libero risus, porttitor ut nisl ac, faucibus feugiat massa. Duis congue vulputate odio eu sodales. Suspendisse ullamcorper, eros at dignissim molestie, est odio blandit turpis, eget lobortis eros nunc consectetur lectus. Nunc auctor nulla id iaculis ornare. Aenean maximus, ipsum vel dignissim dapibus, neque risus pharetra urna, eget interdum lorem purus vel odio. Phasellus aliquet turpis vitae turpis pharetra, nec malesuada massa pellentesque. Donec convallis quam quam, rutrum iaculis orci hendrerit vitae. Phasellus suscipit, dui sit amet imperdiet pretium, augue diam pellentesque turpis, sed interdum orci ligula in elit. Cras aliquet, lectus et ullamcorper tempus, ipsum erat pellentesque libero, nec lobortis erat arcu ac urna. Morbi semper in sapien nec varius. Sed arcu erat, bibendum non quam quis, elementum finibus urna. Maecenas pharetra leo a interdum cursus. Maecenas fringilla tincidunt feugiat.</p>
+
+						<h4>The quick brown fox jumps over the lazy dog.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lectus, ultrices et aliquam nec, varius ut orci. Integer in augue sit amet dui tincidunt mattis. Aenean id nisl risus. Praesent et lacus eu libero congue eleifend. Duis pharetra eleifend purus, at venenatis lectus. Quisque tempor libero urna, id sagittis urna placerat in. Nulla sed nisi vel massa malesuada sollicitudin. Maecenas convallis lorem odio, et imperdiet ante sodales eget. Cras augue erat, dignissim et accumsan pellentesque, sollicitudin sit amet eros. Sed a suscipit purus.</p>
+						<p>Praesent cursus, ex eget interdum pulvinar, turpis lacus placerat nibh, quis pretium erat purus et dui. Nunc eu porta turpis, eu consectetur nibh. Mauris libero risus, porttitor ut nisl ac, faucibus feugiat massa. Duis congue vulputate odio eu sodales. Suspendisse ullamcorper, eros at dignissim molestie, est odio blandit turpis, eget lobortis eros nunc consectetur lectus. Nunc auctor nulla id iaculis ornare. Aenean maximus, ipsum vel dignissim dapibus, neque risus pharetra urna, eget interdum lorem purus vel odio. Phasellus aliquet turpis vitae turpis pharetra, nec malesuada massa pellentesque. Donec convallis quam quam, rutrum iaculis orci hendrerit vitae. Phasellus suscipit, dui sit amet imperdiet pretium, augue diam pellentesque turpis, sed interdum orci ligula in elit. Cras aliquet, lectus et ullamcorper tempus, ipsum erat pellentesque libero, nec lobortis erat arcu ac urna. Morbi semper in sapien nec varius. Sed arcu erat, bibendum non quam quis, elementum finibus urna. Maecenas pharetra leo a interdum cursus. Maecenas fringilla tincidunt feugiat.</p>
+
+						<h5>The quick brown fox jumps over the lazy dog.</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lectus, ultrices et aliquam nec, varius ut orci. Integer in augue sit amet dui tincidunt mattis. Aenean id nisl risus. Praesent et lacus eu libero congue eleifend. Duis pharetra eleifend purus, at venenatis lectus. Quisque tempor libero urna, id sagittis urna placerat in. Nulla sed nisi vel massa malesuada sollicitudin. Maecenas convallis lorem odio, et imperdiet ante sodales eget. Cras augue erat, dignissim et accumsan pellentesque, sollicitudin sit amet eros. Sed a suscipit purus.</p>
+						<p>Praesent cursus, ex eget interdum pulvinar, turpis lacus placerat nibh, quis pretium erat purus et dui. Nunc eu porta turpis, eu consectetur nibh. Mauris libero risus, porttitor ut nisl ac, faucibus feugiat massa. Duis congue vulputate odio eu sodales. Suspendisse ullamcorper, eros at dignissim molestie, est odio blandit turpis, eget lobortis eros nunc consectetur lectus. Nunc auctor nulla id iaculis ornare. Aenean maximus, ipsum vel dignissim dapibus, neque risus pharetra urna, eget interdum lorem purus vel odio. Phasellus aliquet turpis vitae turpis pharetra, nec malesuada massa pellentesque. Donec convallis quam quam, rutrum iaculis orci hendrerit vitae. Phasellus suscipit, dui sit amet imperdiet pretium, augue diam pellentesque turpis, sed interdum orci ligula in elit. Cras aliquet, lectus et ullamcorper tempus, ipsum erat pellentesque libero, nec lobortis erat arcu ac urna. Morbi semper in sapien nec varius. Sed arcu erat, bibendum non quam quis, elementum finibus urna. Maecenas pharetra leo a interdum cursus. Maecenas fringilla tincidunt feugiat.</p>
+
+						<h6>The quick brown fox jumps over the lazy dog.</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nunc lectus, ultrices et aliquam nec, varius ut orci. Integer in augue sit amet dui tincidunt mattis. Aenean id nisl risus. Praesent et lacus eu libero congue eleifend. Duis pharetra eleifend purus, at venenatis lectus. Quisque tempor libero urna, id sagittis urna placerat in. Nulla sed nisi vel massa malesuada sollicitudin. Maecenas convallis lorem odio, et imperdiet ante sodales eget. Cras augue erat, dignissim et accumsan pellentesque, sollicitudin sit amet eros. Sed a suscipit purus.</p>
+						<p>Praesent cursus, ex eget interdum pulvinar, turpis lacus placerat nibh, quis pretium erat purus et dui. Nunc eu porta turpis, eu consectetur nibh. Mauris libero risus, porttitor ut nisl ac, faucibus feugiat massa. Duis congue vulputate odio eu sodales. Suspendisse ullamcorper, eros at dignissim molestie, est odio blandit turpis, eget lobortis eros nunc consectetur lectus. Nunc auctor nulla id iaculis ornare. Aenean maximus, ipsum vel dignissim dapibus, neque risus pharetra urna, eget interdum lorem purus vel odio. Phasellus aliquet turpis vitae turpis pharetra, nec malesuada massa pellentesque. Donec convallis quam quam, rutrum iaculis orci hendrerit vitae. Phasellus suscipit, dui sit amet imperdiet pretium, augue diam pellentesque turpis, sed interdum orci ligula in elit. Cras aliquet, lectus et ullamcorper tempus, ipsum erat pellentesque libero, nec lobortis erat arcu ac urna. Morbi semper in sapien nec varius. Sed arcu erat, bibendum non quam quis, elementum finibus urna. Maecenas pharetra leo a interdum cursus. Maecenas fringilla tincidunt feugiat.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
